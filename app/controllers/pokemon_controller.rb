@@ -3,6 +3,7 @@ class PokemonController < ApplicationController
 	end
 
 	def create
+		puts 5
     	@pokemon = Pokemon.new(pokemon_params)
     	@pokemon.health = 100
     	@pokemon.level = 1

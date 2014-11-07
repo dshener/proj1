@@ -1,4 +1,4 @@
-<%= simple_form_for @pokemon do |poke| %>
+<%= simple_form_for Pokemon.new, :url => pokecreate_path do |poke| %>
 <%= poke.input :name %>
 <%= poke.button :submit %>
 <% end %>
